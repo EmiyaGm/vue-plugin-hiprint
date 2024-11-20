@@ -17,7 +17,7 @@
           </a-button>
         </template>
       </a-button-group>
-      <div style="margin-left: 20px" />
+      <!-- <div style="margin-left: 20px" />
       <a-button
         style="width: 200px; font-size: 16px"
         :type="'templates' === curDemo ? 'primary' : 'info'"
@@ -25,8 +25,8 @@
         @click="curDemo = 'templates'"
       >
         模 板 中 心
-      </a-button>
-      <div style="margin-left: 20px"></div>
+      </a-button> -->
+      <!-- <div style="margin-left: 20px"></div>
       <a-select
         v-if="curDemo == 'printDesign'"
         ref="verSelect"
@@ -35,7 +35,7 @@
         @change="handleVerChange"
         style="width: 160px"
       >
-      </a-select>
+      </a-select> -->
       <div style="margin-left: 20px"></div>
       <a-select
         v-if="i18nSupport"
@@ -76,9 +76,9 @@ export default {
       curDemo: "printDesign",
       demoList: [
         { name: "printDesign", title: "默认拖拽设计" },
-        { name: "printCustom", title: "自定义设计" },
-        { name: "printTasks", title: "队列/批量打印" },
-        { name: "printPanels", title: "多面板设计" },
+        // { name: "printCustom", title: "自定义设计" },
+        // { name: "printTasks", title: "队列/批量打印" },
+        // { name: "printPanels", title: "多面板设计" },
       ],
       // npm 信息
       npmInfo: {},
@@ -137,7 +137,7 @@ export default {
   created() {
     this.version = sessionStorage.getItem("version") || "development";
     this.lang = sessionStorage.getItem("lang") || "cn";
-    this.getVersion();
+    // this.getVersion();
   },
   methods: {
     /**

@@ -720,7 +720,7 @@ export default {
       "paperNumberTop": 573,
       "paperNumberContinue": true,
       "watermarkOptions": {
-        "content": "vue-plugin-hiprint",
+        "content": "",
         "rotate": 25,
         "timestamp": true,
         "format": "YYYY-MM-DD HH:mm"

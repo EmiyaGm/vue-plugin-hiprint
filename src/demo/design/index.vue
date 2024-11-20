@@ -40,12 +40,12 @@
         <a-button type="primary" icon="eye" @click="preView">
           预览
         </a-button>
-        <a-button type="primary" icon="printer" @click="print">
+        <!-- <a-button type="primary" icon="printer" @click="print">
           直接打印
         </a-button>
         <a-button type="primary" icon="printer" @click="printByFragments">
           分批直接打印
-        </a-button>
+        </a-button> -->
         <a-button type="primary" @click="onlyPrint">
           Api单独打印
         </a-button>
@@ -66,7 +66,7 @@
         </a-popconfirm>
         <json-view :template="template"/>
       </a-space>
-      <a-space style="margin-bottom: 10px">
+      <!-- <a-space style="margin-bottom: 10px">
         <a-button type="primary" @click="exportPdf('')">
           导出获取pdf(Blob)
         </a-button>
@@ -85,9 +85,9 @@
         <a-button type="primary" @click="exportPdf('pdfobjectnewwindow')">
           导出查看pdf(PdfObjectNewWindow)
         </a-button>
-      </a-space>
+      </a-space> -->
       <a-space style="margin-bottom: 10px">
-        <a-button type="primary" @click="ippPrintAttr">
+        <!-- <a-button type="primary" @click="ippPrintAttr">
           ipp获取 打印机 参数情况
         </a-button>
         <a-button type="primary" @click="ippPrintTest">
@@ -98,7 +98,7 @@
         </a-button>
         <a-button type="primary" @click="ippRequestPrint">
           ipp请求 打印测试
-        </a-button>
+        </a-button> -->
         <div>元素参数操作:</div>
         <a-button type="primary" @click="setOptionConfig(-1)"> 测试隐藏参数[看代码]
         </a-button>
